@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background: black;
+    overflow: hidden;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+}
+
+.grid-container .btn{
+    transition: 250ms;
+    border: 2px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 56px;
+    font-family: 'Indie Flower', cursive;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+.grid-container .btn:nth-child(1){
+    border-top: none !important;
+    border-left: none !important;
+}
+.grid-container .btn:nth-child(2){
+    border-top: none !important;
+}
+.grid-container .btn:nth-child(3){
+    border-top: none !important;
+    border-right: none !important;
+}
+.grid-container .btn:nth-child(4){
+    border-left: none !important;
+}
+.grid-container .btn:nth-child(6){
+    border-right: none !important;
+}
+.grid-container .btn:nth-child(7){
+    border-bottom: none !important;
+    border-left: none !important;
+}
+.grid-container .btn:nth-child(8){
+    border-bottom: none !important;
+}
+.grid-container .btn:nth-child(9){
+    border-bottom: none !important;
+    border-right: none !important;
+}
+
+.win-line{
+    position: absolute;
+    display: none;
+    height: 3px;
+    background-color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 250ms;
+}
+.win-line:nth-child(1){
+    width: 280px;
+    top: calc(50% - 100px);
+}
+.win-line:nth-child(2){
+    width: 280px;
+}
+.win-line:nth-child(3){
+    width: 280px;
+    top: calc(50% + 100px); 
+}
+.win-line:nth-child(4){
+    width: 3px;
+    height: 280px;
+    left: calc(50% - 100px);
+}
+.win-line:nth-child(5){
+    width: 3px;
+    height: 280px;
+    left: calc(50%);
+}
+.win-line:nth-child(6){
+    width: 3px;
+    height: 280px;
+    left: calc(50% + 100px);
+}
+.win-line:nth-child(7){
+    width: 360px;
+    transform: rotate(45deg);
+    left: calc(50% - 180px);
+}
+.win-line:nth-child(8){
+    width: 360px;
+    transform: rotate(-45deg);
+    left: calc(50% - 180px);
+}
+
+
+
+
+
+.reload-button{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.reload-button img{
+    width: 50px;
+    height: 50px;
+    transition: 500ms;
+}
+.reload-button img:hover{
+    cursor: pointer;
+    rotate: -180deg;
+}
+.reload-button img:focus{
+    rotate: -180deg;
+}
+
