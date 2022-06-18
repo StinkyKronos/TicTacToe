@@ -55,7 +55,7 @@ function checkWinner(){
     else if (col1.innerHTML == "X" && col2.innerHTML =="X" && col3.innerHTML == "X"){
         line1.style.display = "block";
         setTimeout(function(){
-            alert("O wins!");
+            alert("X wins!");
         }, 250);
         
     }
@@ -68,7 +68,7 @@ function checkWinner(){
     else if (col4.innerHTML == "X" && col5.innerHTML =="X" && col6.innerHTML == "X"){
         line2.style.display = "block";
         setTimeout(function(){
-            alert("O wins!");
+            alert("X wins!");
         }, 250);
     }
     else if (col7.innerHTML == "O" && col8.innerHTML =="O" && col9.innerHTML == "O"){
@@ -80,7 +80,7 @@ function checkWinner(){
     else if (col7.innerHTML == "X" && col8.innerHTML =="X" && col9.innerHTML == "X"){
         line3.style.display = "block";
         setTimeout(function(){
-            alert("O wins!");
+            alert("X wins!");
         }, 250);
     }
     else if (col1.innerHTML == "O" && col5.innerHTML =="O" && col9.innerHTML == "O"){
@@ -92,7 +92,7 @@ function checkWinner(){
     else if (col1.innerHTML == "X" && col5.innerHTML =="X" && col9.innerHTML == "X"){
         line7.style.display = "block";
         setTimeout(function(){
-            alert("O wins!");
+            alert("X wins!");
         }, 250);
     }
     else if (col3.innerHTML == "O" && col5.innerHTML =="O" && col7.innerHTML == "O"){
@@ -104,7 +104,7 @@ function checkWinner(){
     else if (col3.innerHTML == "X" && col5.innerHTML =="X" && col7.innerHTML == "X"){
         line8.style.display = "block";
         setTimeout(function(){
-            alert("O wins!");
+            alert("X wins!");
         }, 250);
     }
     else if (col1.innerHTML == "O" && col4.innerHTML =="O" && col7.innerHTML == "O"){
@@ -116,7 +116,7 @@ function checkWinner(){
     else if (col1.innerHTML == "X" && col4.innerHTML =="X" && col7.innerHTML == "X"){
         line4.style.display = "block";
         setTimeout(function(){
-            alert("O wins!");
+            alert("X wins!");
         }, 250);
     }
     else if (col2.innerHTML == "O" && col5.innerHTML =="O" && col8.innerHTML == "O"){
@@ -128,7 +128,7 @@ function checkWinner(){
     else if (col2.innerHTML == "X" && col5.innerHTML =="X" && col8.innerHTML == "X"){
         line5.style.display = "block";
         setTimeout(function(){
-            alert("O wins!");
+            alert("X wins!");
         }, 250);
     }
     else if (col3.innerHTML == "O" && col6.innerHTML =="O" && col9.innerHTML == "O"){
@@ -140,7 +140,7 @@ function checkWinner(){
     else if (col3.innerHTML == "X" && col6.innerHTML =="X" && col9.innerHTML == "X"){
         line6.style.display = "block";
         setTimeout(function(){
-            alert("O wins!");
+            alert("X wins!");
         }, 250);
     }
 }
